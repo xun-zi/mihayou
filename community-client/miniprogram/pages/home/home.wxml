@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+
+<view class="aricleShow">
+    <view style="display: flex;background-color: white;padding-right: 10px;">
+        <van-search bind:search="keywordFind" 
+        value="{{ value }}" placeholder="请输入搜索关键词" style="flex:1;"/>
+        <van-icon name="comment-o" size="30px" info="{{cnt || ''}}" bindtap="navIntoMes" />
+    </view>
+    <my-aricle wx:for="{{aricleInfos}}" aricleInfo="{{item}}" isHome="true" wx:key="index"></my-aricle>
+
+        <van-icon 
+        name="back-top" 
+        class="back-top" 
+        bind:click="backTop" 
+        size="20" 
+        wx:if="{{showBackTop}}" />
+</view>

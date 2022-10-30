@@ -1,0 +1,44 @@
+@import '../global.scss';
+/* pages/aricle/aricle.wxss */
+@mixin my-align-item{
+    display:flex;
+    align-items: center;
+    line-height: 20px;
+}
+@mixin upDownLayout {
+    display: flex;
+}
+.ariclePage{
+    width: 100vw;
+    height: 100vh;
+    .content2{
+        background-color: rgb(227, 227, 227);
+        margin:0 15px;
+    }
+
+    .aComment{
+        @include my-align-item;
+    }
+
+    .sendComment{
+        box-sizing:content-box;
+        height: 30px;
+        margin:3px 10px;
+        display: flex;
+        align-items: center;
+
+        .left{
+            border-radius: 5px;
+            background-color: rgb(237, 237, 237);
+            flex:1;
+            margin-right: 10px;
+        }
+    }
+    .middle{
+        margin-left: 3vw;
+        height: 15vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

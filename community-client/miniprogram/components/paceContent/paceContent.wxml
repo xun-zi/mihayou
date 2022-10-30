@@ -1,0 +1,16 @@
+<!--components/paceContent/paceContent.wxml-->
+<view class="paceContent">
+    <view wx:for="{{textToken}}" wx:key="index">
+        {{item.type === 'text' ? item.value : ''}}
+
+        <van-image 
+        height="23px" 
+        width="23px" 
+        src="/image/pace/{{item.value}}.png" 
+        style="padding: 3px;height: 100%;" 
+        data-pace="{{item}}" 
+        bindtap="addPace"
+        wx:if="{{item.type !== 'text'}}"
+        ></van-image>
+    </view>
+</view>

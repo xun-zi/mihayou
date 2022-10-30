@@ -1,0 +1,18 @@
+<!--pages/personalSpace/personalSpace.wxml-->
+<view class="personalSpace" style="background-image: url('../../image/bg.jpg');">
+    <view class="userInfo">
+        <van-image src="{{userInfo.avatarUrl}}" width="90px" height="90px" round></van-image>
+        <view class="name">
+            {{userInfo.name}}
+        </view>
+    </view>
+    <view class="achievement">
+        <van-grid column-num="3" >
+            <van-grid-item custom-class="border:solid 2px grey;" text="点赞" icon="like-o"></van-grid-item>
+            <van-grid-item text="关注1" icon="star-o"></van-grid-item>
+            <van-grid-item text="粉丝" icon="contact"></van-grid-item>
+        </van-grid>
+    </view>
+    <view class="aricle">
+    </view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/dynamic/dynamic.wxml-->
+<view class="dynamic">
+        <my-aricle wx:for="{{aricleInfos}}" aricleInfo="{{item}}" isHome="{{true}}" wx:key="index"></my-aricle>
+</view>

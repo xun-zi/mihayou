@@ -1,0 +1,42 @@
+/* pages/login/login.wxss */
+
+@mixin button {
+    border-radius: 20px;
+    margin: 3vw;
+    width: 90vw;
+}
+
+.login {
+    min-height: 100vh;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .btn-login {
+        @include button();
+        background-color: #07c160;
+
+        &:active {
+            background-color: #1f814e;
+        }
+    }
+
+    .back {
+        @include button();
+    }
+
+    .av-size {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+    .avatar-wrapper {
+        padding: 0;
+        border: 0;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+}

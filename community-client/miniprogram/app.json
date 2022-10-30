@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/home/home",
+        "pages/dynamic/dynamic",
+        "pages/releaseArticle/releaseArticle",
+        "pages/my/my",
+        "pages/index/index",
+        "pages/aricle/aricle",
+        "pages/personalSpace/personalSpace",
+        "pages/receiveMes/receiveMes"
+    ],
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/home/home",
+            "text": "主页"
+        },{
+            "pagePath": "pages/dynamic/dynamic",
+            "text": "动态"
+        },{
+            "pagePath": "pages/releaseArticle/releaseArticle",
+            "text": "发布文章"
+        },{
+            "pagePath": "pages/my/my",
+            "text": "我的"
+        }]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-row": "@vant/weapp/row/index",
+        "van-col": "@vant/weapp/col/index",
+        "van-image": "@vant/weapp/image/index",
+        "van-divider": "@vant/weapp/divider/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "my-upDown":"./components/layout/upDown/index",
+        "my-paceContent":"./components/paceContent/paceContent",
+        "van-tag": "@vant/weapp/tag/index"
+    },
+    "sitemapLocation": "sitemap.json"
+}

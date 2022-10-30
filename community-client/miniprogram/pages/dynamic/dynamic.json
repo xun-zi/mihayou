@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "my-aricle":"../../components/aricle/aricle"
+    },
+    "navigationBarTitleText": "动态"
+}

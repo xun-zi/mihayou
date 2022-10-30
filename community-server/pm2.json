@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "community-server",
+    "script": "production.js",
+    "cwd": "E:\div\myStudy\miHaYou\community-server",
+    "exec_mode": "fork",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}

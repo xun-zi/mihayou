@@ -1,0 +1,18 @@
+<view class="receiveMes">
+    <view wx:for="{{messages}}" wx:key="{{index}}">
+        <view class="Mes">
+            <van-image src="{{item.avatarUrl}}" width="30px" height="30px" style="margin-right:10px" round></van-image>
+            <view>
+                <view class="tUnimp" style="margin-bottom: 5px;">{{item.name}}</view>
+                <view class="tbody">{{item.replaycontent}}</view>
+                <view wx:if="{{item.content && (item.content !== '')}}" style="background-color: rgb(237, 237, 237);font-size: 10px;">
+                    {{userInfo.name}}回复:{{item.content}}</view>
+                <view class="tUnimp" style="margin-top: 10px;">{{item.time}}</view>
+            </view>
+        </view>
+        <van-divider customStyle="font-size:18px;border-color:black;margin-top:1px;"
+        ></van-divider>
+    </view>
+
+
+</view>

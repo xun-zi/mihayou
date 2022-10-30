@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "my-aricle":"../../components/aricle/aricle",
+        "van-search": "@vant/weapp/search/index"
+    },
+    "navigationBarTitleText": "小马社区"
+}

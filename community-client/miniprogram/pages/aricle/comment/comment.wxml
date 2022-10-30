@@ -1,0 +1,16 @@
+<!--pages/aricle/comment/comment.wxml-->
+<view class="my-comment">
+    <view class="up">
+        <view class="user">
+            <van-image width="30px" height="30px" src="{{comment.avatarUrl}}" round></van-image>
+            <view class="name">{{comment.name}}</view>
+            <van-tag type="danger"></van-tag>
+        </view>
+        <view class="time">{{comment.time}}</view>
+    </view>
+    <view class="down">
+        <view class="content">
+            <my-paceContent text="{{comment.content}}"></my-paceContent>
+        </view>
+    </view>
+</view>

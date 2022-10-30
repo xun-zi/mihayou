@@ -1,0 +1,22 @@
+@import '../global.scss';
+/* pages/personalSpace/personalSpace.wxss */
+.my{
+    @include pageBase();
+    @include m-upDownSideAlign;
+    background:no-repeat;
+    background-size:contain;
+    padding: 0 15px;
+    .userInfo{
+        width: 100%;
+        padding-top: 25vw;
+        display: flex;
+        align-items:flex-end;
+        font-size: 35px;
+
+        .name{
+            margin-left: 10px;
+            font-family: 'Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif';
+            transform: translateY(-3vw);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import '../global.scss';
+/* pages/receiveMes/receiveMes.wxss */
+.receiveMes{
+    @include pageBase($pageBackColor:white);
+    padding: 0 10px;
+    .Mes{
+        @include m-flex-align;
+        padding: 10px;
+    }
+    my-divider{
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+}

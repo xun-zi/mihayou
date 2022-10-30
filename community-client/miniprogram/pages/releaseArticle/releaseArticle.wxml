@@ -1,0 +1,9 @@
+<!--pages/releaseArticle/releaseArticle.wxml-->
+<view class="releaseArticle">
+    <view style="display: flex; flex-direction: row-reverse;">
+        <van-button type="primary" size="small" bindtap="send">发布</van-button>
+    </view>
+
+    <textarea model:value="{{value}}" class="content" ></textarea>
+    <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" bind:delete="deleteImg" image-fit="aspectFill" />
+</view>

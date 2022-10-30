@@ -1,0 +1,29 @@
+<!--pages/aricle/aricle.wxml-->
+<view class="ariclePage">
+    <my-upDown>
+        <!-- 主要内容 -->
+        <view slot="up" style="overflow-y: scroll;height: 100%;">
+            <my-aricle aricleInfo="{{aricleInfo}}" wx:if="{{isLoad}}"></my-aricle>
+            <van-divider custom-style="border-color:black; font-size:18px;">
+            </van-divider>
+            <!-- 评论显示 -->
+            <view>
+                <my-comment wx:for="{{comment}}" wx:key="index" comment="{{item}}" ></my-comment>
+                
+            </view>
+        </view>
+
+        <!-- 输入框 -->
+        <view slot="down">
+            <view class="sendComment">
+                <van-icon name="smile-o" style="margin-right: 10px;" size="20px" bindtap="paceEv" />
+                <input placeholder="{{pla}}" class="left" model:value="{{content}}" bindinput="spaceFN" bindconfirm="send" />
+                <van-button type="primary" size="mini" bindtap="send">发布</van-button>
+            </view>
+            <view wx:if="{{inputState == '表情'}}" style="height: 100px;padding: 10px; display: flex;">
+                <van-image wx:for="{{paces}}" height="30px" width="30px" src="/image/pace/{{item}}.png" style="padding: 3px;" data-pace="{{item}}" bindtap="addPace"></van-image>
+            </view>
+        </view>
+
+    </my-upDown>
+</view>

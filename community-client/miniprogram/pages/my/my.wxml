@@ -1,0 +1,19 @@
+<view class="my" style="background-image: url('/image/bg.jpg');">
+    <view>
+        <view class="userInfo">
+            <van-image src="{{userInfo.avatarUrl}}" width="90px" height="90px" round></van-image>
+            <view class="name">
+                {{userInfo.name}}
+            </view>
+        </view>
+        <view class="achievement">
+            <van-grid column-num="2">
+                <van-grid-item text="关注{{starBig.cntStar}}" icon="star-o"></van-grid-item>
+                <van-grid-item text="粉丝{{starBig.cntStared}}" icon="contact"></van-grid-item>
+            </van-grid>
+        </view>
+    </view>
+    <view>
+        <van-button type="danger" custom-style="width:100%;" bind:click="userExit">退出</van-button>
+    </view>
+</view>

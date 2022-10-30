@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+    <view wx:if="{{isRegister}}">
+        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+            <image class="avatar av-size" src="{{avatarUrl}}" width="10vw" height="10vw"></image>
+        </button>
+        <van-field model:value="{{ value }}" placeholder="请输入用户名" 
+        border="{{ false }}" label="昵称" type="nickname" type="text" />
+    </view>
+
+    <button class="btn-login" bindtap="loginEv">
+        {{isRegister?'注册':'一键登录'}}
+    </button>
+
+    <view style="margin-top: 30px;" bindtap="register">
+        {{isRegister?'一键登录':'注册'}}
+    </view>
+
+</view>

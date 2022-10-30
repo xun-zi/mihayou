@@ -1,0 +1,47 @@
+<view>
+    <view class="aricle" bindtap="Skip">
+
+        <view class="c-bothsSideAlign">
+            <view class="user">
+                <van-image width="2rem" height="2rem" src="{{aricleInfo.avatarUrl}}" 
+                wx:key="{{aricleInfo}}" round="true" />
+                <text class="tUnimp name">{{aricleInfo.name}}</text>
+            </view>
+            <view wx:if="{{!isHome}}">
+                <van-button type="primary" color="grey" size="small" catchtap="star" wx:if="{{isStar}}">已关注</van-button>
+                <van-button type="primary" size="small" catchtap="star" wx:else>关注</van-button>
+            </view>
+        </view>
+
+
+        <view class="tbody content">{{aricleInfo.content}}</view>
+
+
+        <view class="img-container">
+            <van-image 
+            wx:key="index" 
+            wx:for="{{aricleInfo.imgUrl}}" 
+            width="30vw" 
+            height="30vw"
+            data-index="{{index}}"
+            src="{{item}}" 
+            fit="cover" 
+            class="img"
+            bindtap="previewImg"
+            />
+        </view>
+
+        <view class="time-commit">
+            <view class="tUnimp" >
+            {{aricleInfo.time}}</view>
+            <view>
+                <van-icon 
+                name="{{aricleInfo.isPraise ? 'like' : 'like-o'}}" 
+                class="{{aricleInfo.isPraise ? 'yPraise' : 'nPraise'}}" 
+                catchtap="clickPraise" 
+                data-index="{{index}}" />
+                {{aricleInfo.praise}}
+            </view>
+        </view>
+    </view>
+</view>

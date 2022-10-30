@@ -1,0 +1,41 @@
+/* pages/home/home.wxss */
+@import '../global.scss';
+.aricleShow{
+    @include pageBase;
+    .user{
+        display: flex;
+        align-items: center;
+        .name{
+            margin-left: 3vw;
+        }
+    }
+    .back-top{
+        padding: 4px;
+        background-color: rgba(237, 237, 237, 1);
+        position: fixed;
+        right: 3vw;
+        bottom: 20vh;
+    }
+    .content{
+        margin: 5vw 0;
+    }
+    .img-container{
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        .img{
+            margin: 0 3vw;
+        }
+    }
+    .time-commit{
+        margin-top: 5vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .yPraise{
+        color: red;
+    }
+    .nPraise{
+        color: black;
+    }
+}

@@ -1,0 +1,5 @@
+<!--components/layout/upDown/index.wxml-->
+<view class="my-up-down my-class">
+    <slot name="up"></slot>
+    <slot name="down"></slot>
+</view>

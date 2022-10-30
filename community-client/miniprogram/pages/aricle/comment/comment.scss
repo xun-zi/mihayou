@@ -1,0 +1,37 @@
+@import "../../global.scss";
+
+.my-comment {
+    border-bottom: solid black 2px;
+    padding: 8px 0;
+    .up {
+        @include m-bothsSideAlign;
+        margin: 0 8px 0;
+        .user {
+            @include m-flex-align;
+            .name {
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .down {
+        @include m-bothsSideAlign;
+        margin: 0 10px;
+        .content {
+            margin: 5px 0;
+        }
+    }
+
+    .content2 {
+        background-color: rgb(237, 237, 237);
+        margin: 0 15px;
+        .name{
+            color: #008AC5;
+        }
+        .Mes{
+            @include m-flex-align;
+            vertical-align: middle;
+            padding: 4px 3px;
+        }
+    }
+}

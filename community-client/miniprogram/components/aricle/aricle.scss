@@ -1,0 +1,47 @@
+@import '../../pages/global.scss';
+
+.aricle {
+    padding: 2vw 3vw;
+    margin-bottom: 2vw;
+    background-color: white;
+    .user {
+        display: flex;
+        align-items: center;
+
+        .name {
+            margin-left: 3vw;
+            font-size: 16px;
+        }
+        font-size: 1.333rem;
+        font-weight: 500;
+        color: #515767;
+        line-height: 1rem;
+    }
+
+    .content {
+        margin: 5vw 0;
+    }
+
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .img {
+            margin: 0 3vw;
+        }
+    }
+
+    .time-commit {
+        margin-top: 5vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .yPraise {
+        color: red;
+    }
+
+    .nPraise {
+        color: black;
+    }
+}
